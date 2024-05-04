@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Basics/Basics.iml" filepath="$PROJECT_DIR$/Basics/Basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basics/Conditional-if-switch/Conditional-if-switch.iml" filepath="$PROJECT_DIR$/Basics/Conditional-if-switch/Conditional-if-switch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basics/Intro to OOPS/Intro to OOPS.iml" filepath="$PROJECT_DIR$/Basics/Intro to OOPS/Intro to OOPS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Basics/OOPS/OOPS.iml" filepath="$PROJECT_DIR$/Basics/OOPS/OOPS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01_Introduction/Section_01_Introduction/Section_01_Introduction.iml" filepath="$PROJECT_DIR$/01_Introduction/Section_01_Introduction/Section_01_Introduction.iml" />
+    </modules>
+  </component>
+</project>
