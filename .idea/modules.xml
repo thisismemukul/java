@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/Section_02_Data_Types_Variables_and_Literals/Section_02_Data_Types_Variables_and_Literals.iml" filepath="$PROJECT_DIR$/Section_02_Data_Types_Variables_and_Literals/Section_02_Data_Types_Variables_and_Literals.iml" />
       <module fileurl="file://$PROJECT_DIR$/Section_03_Java_Setup_Environment/Section_03_Java_Setup_Environment.iml" filepath="$PROJECT_DIR$/Section_03_Java_Setup_Environment/Section_03_Java_Setup_Environment.iml" />
       <module fileurl="file://$PROJECT_DIR$/Section_04_Features_And_Architecture/Section_04_Features_And_Architecture.iml" filepath="$PROJECT_DIR$/Section_04_Features_And_Architecture/Section_04_Features_And_Architecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Section_05_Operator_And_Expressions/Section_05_Operator_And_Expressions.iml" filepath="$PROJECT_DIR$/Section_05_Operator_And_Expressions/Section_05_Operator_And_Expressions.iml" />
     </modules>
   </component>
 </project>
