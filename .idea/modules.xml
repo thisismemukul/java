@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/Section_03_Java_Setup_Environment/Section_03_Java_Setup_Environment.iml" filepath="$PROJECT_DIR$/Section_03_Java_Setup_Environment/Section_03_Java_Setup_Environment.iml" />
       <module fileurl="file://$PROJECT_DIR$/Section_04_Features_And_Architecture/Section_04_Features_And_Architecture.iml" filepath="$PROJECT_DIR$/Section_04_Features_And_Architecture/Section_04_Features_And_Architecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/Section_05_Operator_And_Expressions/Section_05_Operator_And_Expressions.iml" filepath="$PROJECT_DIR$/Section_05_Operator_And_Expressions/Section_05_Operator_And_Expressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sectioon_06_String_Class_And_Printing/Sectioon_06_String_Class_And_Printing.iml" filepath="$PROJECT_DIR$/Sectioon_06_String_Class_And_Printing/Sectioon_06_String_Class_And_Printing.iml" />
     </modules>
   </component>
 </project>
