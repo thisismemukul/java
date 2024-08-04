@@ -5,12 +5,15 @@ public class TwoDMatrices {
     private int[][] A;
     private int[][] B;
     private int[][] C;
+    private int[][] D; // To store the result of multiplication
 
-    // Public method to initialize and populate matrices
+    // Public method to initialize, populate, and perform operations on matrices
     public void matrices(Scanner scanner) {
         getInputFromUser(scanner);
         computeMatrixSum();  // Compute the sum of matrices A and B into C
         printMatrices();     // Print the matrices
+        multiplyMatrices(); // Multiply matrices A and B and store the result in D
+        printMultiplicationResult(); // Print the result of the multiplication
     }
 
     // Private method to get size and elements of matrices from the user
@@ -20,12 +23,11 @@ public class TwoDMatrices {
         System.out.println("Enter sizeY (number of columns): ");
         int sizeY = scanner.nextInt();
 
-        // Initialize matrices A, B, and C with the given sizes
         A = new int[sizeX][sizeY];
         B = new int[sizeX][sizeY];
         C = new int[sizeX][sizeY];
+        D = new int[sizeX][sizeY]; // Initialize D with the same size
 
-        // Populate matrices A and B with user input
         getElements(sizeX, sizeY, scanner, A, "A");
         getElements(sizeX, sizeY, scanner, B, "B");
     }
@@ -50,6 +52,30 @@ public class TwoDMatrices {
         }
     }
 
+    // Private method to multiply matrices A and B and store the result in D
+    private void multiplyMatrices() {
+        int rowsA = A.length;
+        int colsA = A[0].length;
+        int rowsB = B.length;
+        int colsB = B[0].length;
+
+        if (colsA != rowsB) {
+            throw new IllegalArgumentException("Matrix multiplication not possible: number of columns in A must equal number of rows in B.");
+        }
+
+        // Initialize matrix D with the appropriate size
+        D = new int[rowsA][colsB];
+
+        for (int i = 0; i < rowsA; i++) {
+            for (int j = 0; j < colsB; j++) {
+                D[i][j] = 0;
+                for (int k = 0; k < colsA; k++) {
+                    D[i][j] += A[i][k] * B[k][j];
+                }
+            }
+        }
+    }
+
     // Private method to print the matrices
     private void printMatrices() {
         System.out.println("Matrix A:");
@@ -58,6 +84,12 @@ public class TwoDMatrices {
         printMatrix(B);
         System.out.println("Matrix C (A + B):");
         printMatrix(C);
+    }
+
+    // Private method to print the result of matrix multiplication
+    private void printMultiplicationResult() {
+        System.out.println("Matrix D (A * B):");
+        printMatrix(D);
     }
 
     // Private method to print a matrix with aligned columns
