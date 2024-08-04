@@ -5,8 +5,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 //        OneDArray oneDArray = new OneDArray();
 //        oneDArray.initOneDArray(scanner);
+//
+//        RotateInsertOneDArray rotateInsertOneDArray =
+//                new RotateInsertOneDArray();
+//        rotateInsertOneDArray.playWithArray(scanner);
 
-        RotateInsertOneDArray rotateInsertOneDArray = new RotateInsertOneDArray();
-        rotateInsertOneDArray.playWithArray(scanner);
+        CopyArrayReverseCopyAndIncreaseSize copyArrayReverseCopyAndIncreaseSize =
+                new CopyArrayReverseCopyAndIncreaseSize();
+        copyArrayReverseCopyAndIncreaseSize.playWithArray(scanner);
     }
 }
