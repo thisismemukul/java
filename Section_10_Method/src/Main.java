@@ -5,6 +5,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Methods methods = new Methods();
         methods.playWithMethods(scanner);
+        methods.overloaded();
+        methods.practicingVariables();
+        methods.recursion();
         scanner.close();
     }
 }
