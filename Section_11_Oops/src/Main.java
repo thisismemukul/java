@@ -1,3 +1,5 @@
+import OopGame.mygame.Game;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -14,5 +16,9 @@ public class Main {
         // Demonstrating ColoredRectangle class
         ColoredRectangle coloredRectangle = new ColoredRectangle(7, 14, "Red");
         coloredRectangle.displayDetails();
+
+        Game game = new Game();
+        game.start();  // Start the game
+
     }
 }

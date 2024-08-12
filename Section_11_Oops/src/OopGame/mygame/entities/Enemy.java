@@ -6,16 +6,20 @@ package OopGame.mygame.entities;
  */
 public class Enemy extends GameObject {
     private int damage;  // Enemy's damage
+    private int speed;   // Speed at which the enemy moves
 
-    public Enemy(int x, int y, int damage) {
+    public Enemy(int x, int y, int damage, int speed) {
         super(x, y);  // Call the superclass constructor
         this.damage = damage;
+        this.speed = speed;
     }
 
     @Override
     public void update() {
-        // Example logic for enemy movement or state changes
-        // For now, we'll just print the position
+        // Example logic for enemy movement: Move left by `speed` units each update
+        x -= speed;
+        // Print the position to visualize movement
+        System.out.println("Enemy position: (" + x + ", " + y + ")");
     }
 
     @Override
