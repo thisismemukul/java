@@ -7,12 +7,19 @@ public class Rectangle {
     // Default constructor
     public Rectangle() {
         // Default values can be set here if needed
+        length=0;
+        breadth=0;
     }
 
     // Constructor with parameters (if needed)
     public Rectangle(int length, int breadth) {
-        this.length = length;
+        setLength(length);
         this.breadth = breadth;
+    }
+
+    // Constructor with same parameters (if needed)
+    public Rectangle(int side) {
+        this.length = this.breadth = side;
     }
 
     // Setter method for length
