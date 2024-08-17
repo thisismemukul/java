@@ -17,7 +17,7 @@ public class Rectangle {
 
     // Setter method for length
     public void setLength(int length) {
-        this.length = length;
+        this.length = Math.max(length, 0);
     }
 
     // Setter method for breadth
@@ -37,11 +37,11 @@ public class Rectangle {
 
     // Method to calculate the area of the rectangle
     public int area() {
-        return length * breadth;
+        return getLength() * getBreadth();
     }
 
     // Method to calculate the perimeter of the rectangle
     public int perimeter() {
-        return 2 * (length + breadth);
+        return 2 * (getLength() + getBreadth());
     }
 }

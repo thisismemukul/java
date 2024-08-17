@@ -18,7 +18,7 @@ public class Main {
         coloredRectangle.displayDetails();
 
         Game game = new Game();
-        game.start();  // Start the game
+        game.start();
 
     }
 }
