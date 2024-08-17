@@ -19,6 +19,11 @@ public class Main {
 
         Game game = new Game();
         game.start();
-
+        Cylinder cylinder = new Cylinder();
+        cylinder.setDimensions(10,2);
+        System.out.println("Volume of Cylinder: " + cylinder.volume());
+        System.out.println("Base area of Cylinder: "+ cylinder.baseArea());
+        System.out.println("Surface area of Cylinder: "+ cylinder.surfaceArea());
+        System.out.println("Lateral Surface area of Cylinder: "+ cylinder.lateralSurfaceArea());
     }
 }
