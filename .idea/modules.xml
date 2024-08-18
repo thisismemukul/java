@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/Section_09_Arrays/Section_09_Arrays.iml" filepath="$PROJECT_DIR$/Section_09_Arrays/Section_09_Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/Section_10_Method/Section_10_Method.iml" filepath="$PROJECT_DIR$/Section_10_Method/Section_10_Method.iml" />
       <module fileurl="file://$PROJECT_DIR$/Section_11_Oops/Section_11_Oops.iml" filepath="$PROJECT_DIR$/Section_11_Oops/Section_11_Oops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Section_12_Inheritance/Section_12_Inheritance.iml" filepath="$PROJECT_DIR$/Section_12_Inheritance/Section_12_Inheritance.iml" />
     </modules>
   </component>
 </project>
