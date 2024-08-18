@@ -15,6 +15,8 @@ public class Main {
         System.out.println("Radius: " + cylinder.getRadius());
         System.out.println("Height: " + cylinder.getHeight());
         System.out.println("Volume: " + cylinder.getVolume());
+        System.out.println("Area: " + cylinder.getArea());
+        System.out.println("Perimeter: " + cylinder.getPerimeter());
         System.out.println("Surface Area: " + cylinder.getSurfaceArea());
         System.out.println("Lateral Surface Area: " + cylinder.getLateralSurfaceArea());
         System.out.println(cylinder);
