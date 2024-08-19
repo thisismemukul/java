@@ -6,5 +6,8 @@ public class InheritConst {
         System.out.println(child);
         System.out.println();
         GrandChild grandChild = new GrandChild();
+
+        Child paramChild = new Child("Mukul",20);
+
     }
 }
