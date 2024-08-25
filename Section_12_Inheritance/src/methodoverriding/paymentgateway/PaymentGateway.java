@@ -5,17 +5,16 @@ public class PaymentGateway {
         Payment payment;
 
         payment= new UPI();
-        payment.processPayment(23);
+        payment.executePayment(23);
 
         payment= new CreditCard();
-        payment.validateDetails();
-        payment.processPayment(512);
+        payment.executePayment(512);
 
         payment = new DebitCard();
-        payment.processPayment(18.2);
+        payment.executePayment(18.2);
 
         payment =  new NetBanking();
-        payment.processPayment(12000.54);
+        payment.executePayment(12000.54);
 
     }
 }
