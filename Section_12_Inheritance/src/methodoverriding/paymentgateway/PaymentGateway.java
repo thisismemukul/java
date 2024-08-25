@@ -2,13 +2,13 @@ package methodoverriding.paymentgateway;
 
 public class PaymentGateway {
     public static void main(String[] args) {
-        Payment payment = new Payment();
-        payment.processPayment(4);
+        Payment payment;
 
         payment= new UPI();
         payment.processPayment(23);
 
         payment= new CreditCard();
+        payment.validateDetails();
         payment.processPayment(512);
 
         payment = new DebitCard();
