@@ -15,7 +15,7 @@ public class LetsBreakSingleton {
      * 2.Serialization
      * Solution - implement read resolve method
      * 3.Cloning
-     *
+     * Solution - throw new CloneNotSupportedException("Cannot clone a singleton object.");
      * */
     // Initialize the logger
     private static final Logger logger = Logger.getLogger(LetsBreakSingleton.class.getName());
