@@ -3,12 +3,12 @@ import java.io.Serializable;
 
 class LazySingletonCoffeeMachine implements Serializable, Cloneable {
     private static LazySingletonCoffeeMachine lazySingletonCoffeeMachine;
-//    private static boolean instanceCreated = false;
+    private static boolean instanceCreated = false;
     private LazySingletonCoffeeMachine() {
-//        if (instanceCreated) {
-//            throw new RuntimeException("Cannot create instance via reflection. Use getSingletonCoffeeMachineInstance() method.");
-//        }
-//        instanceCreated = true;
+        if (instanceCreated) {
+            throw new RuntimeException("Cannot create instance via reflection. Use getSingletonCoffeeMachineInstance() method.");
+        }
+        instanceCreated = true;
         System.out.println("Lazy Coffee machine is ready.");
     }
 
