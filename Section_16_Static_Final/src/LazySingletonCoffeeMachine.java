@@ -5,7 +5,7 @@ class LazySingletonCoffeeMachine {
         System.out.println("Lazy Coffee machine is ready.");
     }
 
-    public static LazySingletonCoffeeMachine getSingletonCoffeeMachineInstance() {
+    public synchronized static LazySingletonCoffeeMachine getSingletonCoffeeMachineInstance() {
         if (lazySingletonCoffeeMachine == null) {
             lazySingletonCoffeeMachine = new LazySingletonCoffeeMachine();
         }
