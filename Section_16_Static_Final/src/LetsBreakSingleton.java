@@ -14,12 +14,13 @@ public class LetsBreakSingleton {
      * Solution - Reflection breaking law solution using runtime exception
      * 2.Serialization
      * Solution - implement read resolve method
+     * 3.Cloning
      *
      * */
     // Initialize the logger
     private static final Logger logger = Logger.getLogger(LetsBreakSingleton.class.getName());
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception, CloneNotSupportedException {
         try {
             LazySingletonCoffeeMachine lazySingletonCoffeeMachineForPerson1 = LazySingletonCoffeeMachine.getSingletonCoffeeMachineInstance();
 
@@ -47,6 +48,16 @@ public class LetsBreakSingleton {
             System.out.println(lazySingletonCoffeeMachineForPerson1.hashCode());
             System.out.println(lazySingletonCoffeeMachineForPerson3.hashCode());
             System.out.println("Are both instances the same? " + (lazySingletonCoffeeMachineForPerson1 == lazySingletonCoffeeMachineForPerson3));
+
+            //3
+            LazySingletonCoffeeMachine lazySingletonCoffeeMachineForPerson4 = (LazySingletonCoffeeMachine) lazySingletonCoffeeMachineForPerson1.clone();
+            System.out.println(lazySingletonCoffeeMachineForPerson1.hashCode());
+            System.out.println(lazySingletonCoffeeMachineForPerson4.hashCode());
+            logger.log(Level.INFO,
+                    "lazySingletonCoffeeMachineForPerson4: ",
+                    lazySingletonCoffeeMachineForPerson4.hashCode());
+
+            System.out.println("Are both instances the same? " + (lazySingletonCoffeeMachineForPerson1 == lazySingletonCoffeeMachineForPerson4));
 
 
         } catch (Exception e) {

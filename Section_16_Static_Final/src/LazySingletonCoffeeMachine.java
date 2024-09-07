@@ -1,7 +1,7 @@
 import java.io.Serial;
 import java.io.Serializable;
 
-class LazySingletonCoffeeMachine implements Serializable {
+class LazySingletonCoffeeMachine implements Serializable, Cloneable {
     private static LazySingletonCoffeeMachine lazySingletonCoffeeMachine;
 //    private static boolean instanceCreated = false;
     private LazySingletonCoffeeMachine() {
@@ -23,6 +23,11 @@ class LazySingletonCoffeeMachine implements Serializable {
     @Serial
     public Object readResolve() {
         return lazySingletonCoffeeMachine;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 
     // Coffee Machine Methods
