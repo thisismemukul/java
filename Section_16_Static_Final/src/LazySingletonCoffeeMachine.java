@@ -27,7 +27,7 @@ class LazySingletonCoffeeMachine implements Serializable, Cloneable {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        throw new CloneNotSupportedException("Cannot clone a singleton object.");
     }
 
     // Coffee Machine Methods
