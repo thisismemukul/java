@@ -5,9 +5,11 @@ class LazySingletonCoffeeMachine {
         System.out.println("Lazy Coffee machine is ready.");
     }
 
-    public synchronized static LazySingletonCoffeeMachine getSingletonCoffeeMachineInstance() {
-        if (lazySingletonCoffeeMachine == null) {
-            lazySingletonCoffeeMachine = new LazySingletonCoffeeMachine();
+    public static LazySingletonCoffeeMachine getSingletonCoffeeMachineInstance() {
+        synchronized (LazySingletonCoffeeMachine.class) {
+            if (lazySingletonCoffeeMachine == null) {
+                lazySingletonCoffeeMachine = new LazySingletonCoffeeMachine();
+            }
         }
         return lazySingletonCoffeeMachine;
     }
