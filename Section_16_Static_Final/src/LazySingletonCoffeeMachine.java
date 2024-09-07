@@ -1,11 +1,14 @@
-class LazySingletonCoffeeMachine {
+import java.io.Serial;
+import java.io.Serializable;
+
+class LazySingletonCoffeeMachine implements Serializable {
     private static LazySingletonCoffeeMachine lazySingletonCoffeeMachine;
-    private static boolean instanceCreated = false;
+//    private static boolean instanceCreated = false;
     private LazySingletonCoffeeMachine() {
-        if (instanceCreated) {
-            throw new RuntimeException("Cannot create instance via reflection. Use getSingletonCoffeeMachineInstance() method.");
-        }
-        instanceCreated = true;
+//        if (instanceCreated) {
+//            throw new RuntimeException("Cannot create instance via reflection. Use getSingletonCoffeeMachineInstance() method.");
+//        }
+//        instanceCreated = true;
         System.out.println("Lazy Coffee machine is ready.");
     }
 
@@ -17,6 +20,11 @@ class LazySingletonCoffeeMachine {
         }
         return lazySingletonCoffeeMachine;
     }
+    @Serial
+    public Object readResolve() {
+        return lazySingletonCoffeeMachine;
+    }
+
     // Coffee Machine Methods
     public void brewCoffee(String type) {
         System.out.println("Brewing a cup of " + type + " coffee.");
