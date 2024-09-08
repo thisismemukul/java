@@ -39,6 +39,18 @@ public class Exceptions {
         System.out.println("Inside methodThatThrows()");
         throw new CustomException("This is a CustomException from methodThatThrows()");
     }
+
+    public void finallyDemo(){
+        try {
+            System.out.println(10/0);
+        }catch (Exception e) {
+            System.out.println("Inside finallyDemo() exception");
+            System.out.println(e);
+        }finally {
+            System.out.println("Inside finallyDemo()");
+        }
+
+    }
 }
 
 

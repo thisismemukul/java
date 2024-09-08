@@ -6,5 +6,6 @@ public class Main {
         exceptions.multipleCatch();
         exceptions.NestedTryCatch();
         exceptions.methodThatUsesThrow();
+        exceptions.finallyDemo();
     }
 }
