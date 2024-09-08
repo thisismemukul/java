@@ -5,5 +5,6 @@ public class Main {
         Exceptions exceptions = new Exceptions();
         exceptions.multipleCatch();
         exceptions.NestedTryCatch();
+        exceptions.methodThatUsesThrow();
     }
 }

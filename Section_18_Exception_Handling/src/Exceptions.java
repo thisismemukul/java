@@ -26,4 +26,19 @@ public class Exceptions {
             System.out.println(e);
         }
     }
+    public static void methodThatUsesThrow() {
+        try {
+            System.out.println("Inside methodThatUsesThrow()");
+            methodThatThrows();
+        } catch (CustomException e) {
+            System.out.println("Caught exception: " + e.getMessage());
+        }
+    }
+
+    public static void methodThatThrows() throws CustomException {
+        System.out.println("Inside methodThatThrows()");
+        throw new CustomException("This is a CustomException from methodThatThrows()");
+    }
 }
+
+
