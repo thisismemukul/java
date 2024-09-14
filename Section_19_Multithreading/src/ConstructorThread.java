@@ -9,7 +9,7 @@ class MyThread extends Thread{
         while(true){
             System.out.println("MyThread "+i++);
             try {
-                Thread.sleep(10000);
+                Thread.sleep(1000);
             }catch (InterruptedException e){
                 System.out.println("MyThread interrupted"+e.getMessage());
             }
@@ -17,7 +17,7 @@ class MyThread extends Thread{
     }
 }
 public class ConstructorThread {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         MyThread t = new MyThread("my thread 1");
         System.out.println(t.getName());
         System.out.println(t.getPriority());
@@ -28,6 +28,19 @@ public class ConstructorThread {
         System.out.println(t.isDaemon());
         System.out.println(t.isInterrupted());
         System.out.println(t.getThreadGroup());
+//        t.setDaemon(true);
+//        Thread mainThread = Thread.currentThread();
+//        mainThread.join();
+        int i = 1;
+        while(true){
+            System.out.println("Main Thread "+i++);
+            try {
+                Thread.sleep(1000);
+            }catch (InterruptedException e){
+                System.out.println("MyThread interrupted"+e.getMessage());
+                Thread.yield();
+            }
+        }
     }
 }
 
