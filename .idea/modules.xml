@@ -25,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/Section_16_Static_Final/Section_16_Static_Final.iml" filepath="$PROJECT_DIR$/Section_16_Static_Final/Section_16_Static_Final.iml" />
       <module fileurl="file://$PROJECT_DIR$/Section_17_Package/Section_17_Package.iml" filepath="$PROJECT_DIR$/Section_17_Package/Section_17_Package.iml" />
       <module fileurl="file://$PROJECT_DIR$/Section_18_Exception_Handling/Section_18_Exception_Handling.iml" filepath="$PROJECT_DIR$/Section_18_Exception_Handling/Section_18_Exception_Handling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Section_19_Multithreading/Section_19_Multithreading.iml" filepath="$PROJECT_DIR$/Section_19_Multithreading/Section_19_Multithreading.iml" />
     </modules>
   </component>
 </project>
