@@ -1,8 +1,15 @@
 class MyData{
-    void display(String str){
-        for(int i=0;i<str.length();i++){
-            System.out.println(str.charAt(i));
-        }
+    synchronized void display(String str){
+//        synchronized(this) {
+            for (int i = 0; i < str.length(); i++) {
+                System.out.println(str.charAt(i));
+                try{
+                    Thread.sleep(10000);
+                }catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+//        }
     }
 }
 
@@ -28,7 +35,7 @@ class MyThread2 extends Thread{
 public class WhySynchronisation {
     public static void main(String[] args) {
         MyData d = new MyData();
-        d.display("Mukul");
+//        d.display("Mukul");
         MyThread1 m1 = new MyThread1(d);
         MyThread2 m2 = new MyThread2(d);
         m1.start();
